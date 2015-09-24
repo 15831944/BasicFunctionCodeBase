@@ -1,0 +1,12 @@
+=== tiny-tcp.shar =========================
+20-May-86 22:18:18-MDT,47610;000000000001
+Return-Path: <unix-sources-request@BRL.ARPA>
+Received: from BRL-SMOKE.ARPA by SIMTEL20.ARPA with TCP; Tue 20 May 86 22:16:42-MDT
+Received: from USENET by SMOKE.BRL.ARPA id a016188; 20 May 86 20:03 EDT
+From: geof@imagen.uucp
+Newsgroups: net.sources
+Subject: TINYTCP-public domain tcp/ip implementation
+Message-ID: <366@imagen.UUCP>
+Date: 16 May 86 00:13:10 GMT
+To:       unix-sources@brl-smoke.arpa
+

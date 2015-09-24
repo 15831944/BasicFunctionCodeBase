@@ -1,0 +1,12 @@
+
+客户端：
+    泰捷视频
+    kodi/xbmc
+    
+    
+服务器端：
+    zyxel nas325
+    DarwinStreamingServer
+    EasyDarwin
+
+

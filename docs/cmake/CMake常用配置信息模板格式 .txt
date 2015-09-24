@@ -1,0 +1,108 @@
+CMake常用配置信息模板格式  
+
+
+
+之前进行Linux项目开发都是使用automake，但是automake有很问题，其中最大的问题是编译的速度比较慢，经过比较后发现，速度相差十几倍，当然，可能也有原因是我们对automake的学习不是很深入，导致一些功能未体现，但是从基本使用来看，CMake速度确实超过automake许多，当然还有其它一些好处，比如语法更简单、功能更强等。
+
+CMake是通过CMakeLists.txt文件实现配置，依据一般项目的实际来看，主要分这么几个CMakeLists.txt文件：
+
+    1）项目根目录下总的CMakeLists.txt
+
+    2）描述子目录的CMakeLists.txt
+
+    3）描述库文件的CMakeLists.txt
+
+    4）描述可执行文件的CMakeLists.txt
+
+    
+    
+以下针对以上CMake配置文件进行常用模板格式描述：
+
+1）项目根目录下总的CMakeLists.txt
+
+     # 设置所需要的cmake最小版本
+     CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+
+     # 设置项目名称
+     PROJECT(xxx)
+
+     # 设置项目安装路径
+     SET(CMAKE_INSTALL_PREFIX /project/to/install/path)
+
+     # 设置编译选项
+     ADD_DEFINITIONS(-g -Wall -Werror)
+
+     # 设置包含头文件路径，每行单独一个路径
+     INCLUDE_DIRECTORIES(
+          xxx
+
+          ......
+     )
+
+     # 设置待链接的库文件路径
+     LINK_DIRECTORIES(
+           xxx
+
+           ......
+     )
+
+     # 添加要处理的路径列表，每行单独一个路径
+
+     # 注意，不能在一个ADD_SUBDIRECTORY中存放多个目录（至少2.8.5版本不支持）。
+     ADD_SUBDIRECTORY(dir1)
+
+     ADD_SUBDIRECTORY(...)
+
+     # 安装目标文件
+     INSTALL(DIRECTORY DESTINATION . PATTERN "*.*" EXCLUDE)
+
+2）描述子目录的CMakeLists.txt
+
+     # 添加要处理的目录列表，每行单独一个目录
+     ADD_SUBDIRECTORY(subdir1)
+
+     ADD_SUBDIRECTORY(......)
+
+3）描述库文件的CMakeLists.txt
+
+     # 将当前目录下的源代码文件列表赋给变量SRC_LIST
+     AUX_SOURCE_DIRECTORY(. SRC_LIST)
+
+     # 添加动态库
+     ADD_LIBRARY(xxx SHARED ${SRC_LIST})
+
+     # 设置依赖关系，如果当前库是最底层的共享库，则不需要设置
+     # ADD_DEPENDENCIES(xxx dependlib1 ...)
+
+     # 添加要链接的共享库
+    TARGET_LINK_LIBRARIES(xxx ......)
+
+    # 设置版本号，SOVERSION为API版本号
+    SET_TARGET_PROPERTIES(xxx PROPERTIES VERSION 1.0.0 SOVERSION 1)
+
+    # 安装动态库文件
+    INSTALL(TARGETS xxx LIBRARY DESTINATION subdir1)
+4）描述可执行文件的CMakeLists.txt
+
+     # 将当前目录下的源代码文件列表赋给变量SRC_LIST
+     AUX_SOURCE_DIRECTORY(. SRC_LIST)
+
+     # 添加可执行程序
+     ADD_EXECUTABLE(xxx ${SRC_LIST})
+
+     # 设置依赖关系，如果没有，则不需要设置
+     # ADD_DEPENDENCIES(xxx dependlib1 ...)
+
+     # 添加要链接的共享库
+     TARGET_LINK_LIBRARIES(xxx ......)
+
+     # 安装可执行程序文件
+     INSTALL(TARGETS xxx RUNTIME DESTINATION xxx)
+
+ 好了，以上基本是一个项目所使用的CMake配置信息模板了。
+
+
+
+
+
+

@@ -1,0 +1,720 @@
+卷 新加卷 的文件夹 PATH 列表
+卷序列号为 927B-B8BD
+H:\MY_SVN\MY_PLAYER-TEST\SRC\XMPP_IM
+│  CMakeLists.txt
+│  logXmppIM.c
+│  logXmppIM.h
+│  XmppIM.h
+│  XmppIMInterface.c
+│  XmppIMInterface.h
+│  文件夹树形目录生成器.bat
+│  
+├─examples
+│      adhoc_example.cpp
+│      annotations_example.cpp
+│      bookmarkstorage_example.cpp
+│      bosh_example.cpp
+│      component_example.cpp
+│      disco_example.cpp
+│      e2ee_client.cpp
+│      e2ee_server.cpp
+│      flexoff_example.cpp
+│      ft_recv.cpp
+│      ft_send.cpp
+│      linklocal_example.cpp
+│      Makefile.am
+│      Makefile.in
+│      message_example.cpp
+│      muc_example.cpp
+│      privacylist_example.cpp
+│      privatexml_example.cpp
+│      pubsub_example.cpp
+│      reconnect_example.cpp
+│      register_example.cpp
+│      reset_example.cpp
+│      roster_example.cpp
+│      vcard_example.cpp
+│      
+├─gloox
+│  │  adhoc.cpp
+│  │  amp.cpp
+│  │  annotations.cpp
+│  │  atomicrefcount.cpp
+│  │  attention.cpp
+│  │  base64.cpp
+│  │  bookmarkstorage.cpp
+│  │  capabilities.cpp
+│  │  carbons.cpp
+│  │  chatstate.cpp
+│  │  chatstatefilter.cpp
+│  │  client.cpp
+│  │  clientbase.cpp
+│  │  component.cpp
+│  │  compressiondefault.cpp
+│  │  compressionzlib.cpp
+│  │  connectionbosh.cpp
+│  │  connectionhttpproxy.cpp
+│  │  connectionsocks5proxy.cpp
+│  │  connectiontcpbase.cpp
+│  │  connectiontcpclient.cpp
+│  │  connectiontcpserver.cpp
+│  │  connectiontls.cpp
+│  │  connectiontlsserver.cpp
+│  │  dataform.cpp
+│  │  dataformfield.cpp
+│  │  dataformfieldcontainer.cpp
+│  │  dataformitem.cpp
+│  │  dataformreported.cpp
+│  │  delayeddelivery.cpp
+│  │  disco.cpp
+│  │  dns.cpp
+│  │  error.cpp
+│  │  eventdispatcher.cpp
+│  │  featureneg.cpp
+│  │  flexoff.cpp
+│  │  forward.cpp
+│  │  gloox.cpp
+│  │  gpgencrypted.cpp
+│  │  gpgsigned.cpp
+│  │  inbandbytestream.cpp
+│  │  instantmucroom.cpp
+│  │  iodata.cpp
+│  │  iq.cpp
+│  │  jid.cpp
+│  │  jinglecontent.cpp
+│  │  jinglefiletransfer.cpp
+│  │  jingleiceudp.cpp
+│  │  jinglepluginfactory.cpp
+│  │  jinglesession.cpp
+│  │  jinglesessionmanager.cpp
+│  │  lastactivity.cpp
+│  │  linklocalclient.cpp
+│  │  linklocalmanager.cpp
+│  │  logsink.cpp
+│  │  md5.cpp
+│  │  message.cpp
+│  │  messageevent.cpp
+│  │  messageeventfilter.cpp
+│  │  messagefilter.cpp
+│  │  messagesession.cpp
+│  │  mucinvitationhandler.cpp
+│  │  mucmessagesession.cpp
+│  │  mucroom.cpp
+│  │  mutex.cpp
+│  │  nickname.cpp
+│  │  nonsaslauth.cpp
+│  │  oob.cpp
+│  │  parser.cpp
+│  │  prep.cpp
+│  │  presence.cpp
+│  │  privacyitem.cpp
+│  │  privacymanager.cpp
+│  │  privatexml.cpp
+│  │  pubsubevent.cpp
+│  │  pubsubitem.cpp
+│  │  pubsubmanager.cpp
+│  │  receipt.cpp
+│  │  registration.cpp
+│  │  rosteritem.cpp
+│  │  rostermanager.cpp
+│  │  search.cpp
+│  │  sha.cpp
+│  │  shim.cpp
+│  │  simanager.cpp
+│  │  siprofileft.cpp
+│  │  socks5bytestream.cpp
+│  │  socks5bytestreammanager.cpp
+│  │  socks5bytestreamserver.cpp
+│  │  softwareversion.cpp
+│  │  stanza.cpp
+│  │  stanzaextensionfactory.cpp
+│  │  subscription.cpp
+│  │  tag.cpp
+│  │  tlsdefault.cpp
+│  │  tlsgnutlsbase.cpp
+│  │  tlsgnutlsclient.cpp
+│  │  tlsgnutlsclientanon.cpp
+│  │  tlsgnutlsserveranon.cpp
+│  │  tlsopensslbase.cpp
+│  │  tlsopensslclient.cpp
+│  │  tlsopensslserver.cpp
+│  │  tlsschannel.cpp
+│  │  uniquemucroom.cpp
+│  │  util.cpp
+│  │  vcard.cpp
+│  │  vcardmanager.cpp
+│  │  vcardupdate.cpp
+│  │  version.rc
+│  │  xhtmlim.cpp
+│  │  
+│  └─includes
+│          adhoc.h
+│          adhoccommandprovider.h
+│          adhochandler.h
+│          adhocplugin.h
+│          amp.h
+│          annotations.h
+│          annotationshandler.h
+│          atomicrefcount.h
+│          attention.h
+│          base64.h
+│          bookmarkhandler.h
+│          bookmarkstorage.h
+│          bytestream.h
+│          bytestreamdatahandler.h
+│          bytestreamhandler.h
+│          capabilities.h
+│          carbons.h
+│          chatstate.h
+│          chatstatefilter.h
+│          chatstatehandler.h
+│          client.h
+│          clientbase.h
+│          component.h
+│          compressionbase.h
+│          compressiondatahandler.h
+│          compressiondefault.h
+│          compressionzlib.h
+│          config.h
+│          connectionbase.h
+│          connectionbosh.h
+│          connectiondatahandler.h
+│          connectionhandler.h
+│          connectionhttpproxy.h
+│          connectionlistener.h
+│          connectionsocks5proxy.h
+│          connectiontcpbase.h
+│          connectiontcpclient.h
+│          connectiontcpserver.h
+│          connectiontls.h
+│          connectiontlsserver.h
+│          dataform.h
+│          dataformfield.h
+│          dataformfieldcontainer.h
+│          dataformitem.h
+│          dataformreported.h
+│          delayeddelivery.h
+│          disco.h
+│          discohandler.h
+│          disconodehandler.h
+│          dns.h
+│          error.h
+│          event.h
+│          eventdispatcher.h
+│          eventhandler.h
+│          featureneg.h
+│          flexoff.h
+│          flexoffhandler.h
+│          forward.h
+│          gloox.h
+│          glooxversion.h
+│          gpgencrypted.h
+│          gpgsigned.h
+│          inbandbytestream.h
+│          instantmucroom.h
+│          iodata.h
+│          iq.h
+│          iqhandler.h
+│          jid.h
+│          jinglecontent.h
+│          jinglefiletransfer.h
+│          jingleiceudp.h
+│          jingleplugin.h
+│          jinglepluginfactory.h
+│          jinglesession.h
+│          jinglesessionhandler.h
+│          jinglesessionmanager.h
+│          lastactivity.h
+│          lastactivityhandler.h
+│          linklocal.h
+│          linklocalclient.h
+│          linklocalhandler.h
+│          linklocalmanager.h
+│          loghandler.h
+│          logsink.h
+│          macros.h
+│          md5.h
+│          message.h
+│          messageevent.h
+│          messageeventfilter.h
+│          messageeventhandler.h
+│          messagefilter.h
+│          messagehandler.h
+│          messagesession.h
+│          messagesessionhandler.h
+│          mucinvitationhandler.h
+│          mucmessagesession.h
+│          mucroom.h
+│          mucroomconfighandler.h
+│          mucroomhandler.h
+│          mutex.h
+│          mutexguard.h
+│          nickname.h
+│          nonsaslauth.h
+│          oob.h
+│          parser.h
+│          prep.h
+│          presence.h
+│          presencehandler.h
+│          privacyitem.h
+│          privacylisthandler.h
+│          privacymanager.h
+│          privatexml.h
+│          privatexmlhandler.h
+│          pubsub.h
+│          pubsubevent.h
+│          pubsubitem.h
+│          pubsubmanager.h
+│          pubsubresulthandler.h
+│          receipt.h
+│          registration.h
+│          registrationhandler.h
+│          resource.h
+│          rosteritem.h
+│          rosteritemdata.h
+│          rosterlistener.h
+│          rostermanager.h
+│          search.h
+│          searchhandler.h
+│          sha.h
+│          shim.h
+│          sihandler.h
+│          simanager.h
+│          siprofileft.h
+│          siprofilefthandler.h
+│          siprofilehandler.h
+│          socks5bytestream.h
+│          socks5bytestreammanager.h
+│          socks5bytestreamserver.h
+│          softwareversion.h
+│          stanza.h
+│          stanzaextension.h
+│          stanzaextensionfactory.h
+│          statisticshandler.h
+│          subscription.h
+│          subscriptionhandler.h
+│          tag.h
+│          taghandler.h
+│          tlsbase.h
+│          tlsdefault.h
+│          tlsgnutlsbase.h
+│          tlsgnutlsclient.h
+│          tlsgnutlsclientanon.h
+│          tlsgnutlsserveranon.h
+│          tlshandler.h
+│          tlsopensslbase.h
+│          tlsopensslclient.h
+│          tlsopensslserver.h
+│          tlsschannel.h
+│          uniquemucroom.h
+│          util.h
+│          vcard.h
+│          vcardhandler.h
+│          vcardmanager.h
+│          vcardupdate.h
+│          xhtmlim.h
+│          
+├─gloox-api
+└─tests
+    │  Makefile.am
+    │  Makefile.in
+    │  
+    ├─adhoc
+    │      adhoc_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─adhoccommand
+    │      adhoccommand_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─adhoccommandnote
+    │      adhoccommandnote_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─amp
+    │      amp_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─amprule
+    │      amprule_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─base64
+    │      base64_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─capabilities
+    │      capabilities_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─carbons
+    │      carbons_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─chatstatefilter
+    │      chatstatefilter_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─client
+    │      client_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─clientbase
+    │      clientbase_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─connectionbosh
+    │      connectionbosh_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─dataform
+    │      dataform_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─dataformfield
+    │      dataformfield_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─dataformitem
+    │      dataformitem_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─dataformreported
+    │      dataformreported_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─delayeddelivery
+    │      delayeddelivery_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─disco
+    │      disco_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─discoinfo
+    │      discoinfo_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─discoitems
+    │      discoitems_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─error
+    │      error_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─featureneg
+    │      featureneg_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─flexoffline
+    │      flexoffline_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─flexofflineoffline
+    │      flexofflineoffline_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─forward
+    │      forward_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─gpgencrypted
+    │      gpgencrypted_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─gpgsigned
+    │      gpgsigned_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─inbandbytestream
+    │      inbandbytestream_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─inbandbytestreamibb
+    │      inbandbytestreamibb_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─iodata
+    │      iodata_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─iq
+    │      iq_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─jid
+    │      jid_perf.cpp
+    │      jid_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─jingleiceudp
+    │      jingleiceudp_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─jinglesession
+    │      jinglesession_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─jinglesessionjingle
+    │      jinglesessionjingle_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─jinglesessionmanager
+    │      jinglesessionmanager_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─lastactivity
+    │      lastactivity_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─lastactivityquery
+    │      lastactivityquery_test.cpp
+    │      Makefile.am
+    │      Makefile.in
+    │      
+    ├─md5
+    │      Makefile.am
+    │      Makefile.in
+    │      md5_test.cpp
+    │      
+    ├─message
+    │      Makefile.am
+    │      Makefile.in
+    │      message_test.cpp
+    │      
+    ├─messageeventfilter
+    │      Makefile.am
+    │      Makefile.in
+    │      messageeventfilter_test.cpp
+    │      
+    ├─mucroommuc
+    │      Makefile.am
+    │      Makefile.in
+    │      mucroommuc_test.cpp
+    │      
+    ├─mucroommucadmin
+    │      Makefile.am
+    │      Makefile.in
+    │      mucroommucadmin_test.cpp
+    │      
+    ├─mucroommucowner
+    │      Makefile.am
+    │      Makefile.in
+    │      mucroommucowner_test.cpp
+    │      
+    ├─mucroommucuser
+    │      Makefile.am
+    │      Makefile.in
+    │      mucroommucuser_test.cpp
+    │      
+    ├─nickname
+    │      Makefile.am
+    │      Makefile.in
+    │      nickname_test.cpp
+    │      
+    ├─nonsaslauth
+    │      Makefile.am
+    │      Makefile.in
+    │      nonsaslauth_test.cpp
+    │      
+    ├─nonsaslauthquery
+    │      Makefile.am
+    │      Makefile.in
+    │      nonsaslauthquery_test.cpp
+    │      
+    ├─oob
+    │      Makefile.am
+    │      Makefile.in
+    │      oob_test.cpp
+    │      
+    ├─parser
+    │      Makefile.am
+    │      Makefile.in
+    │      parser_test.cpp
+    │      
+    ├─prep
+    │      Makefile.am
+    │      Makefile.in
+    │      prep_test.cpp
+    │      
+    ├─presence
+    │      Makefile.am
+    │      Makefile.in
+    │      presence_test.cpp
+    │      
+    ├─privacymanager
+    │      Makefile.am
+    │      Makefile.in
+    │      privacymanager_test.cpp
+    │      
+    ├─privacymanagerquery
+    │      Makefile.am
+    │      Makefile.in
+    │      privacymanagerquery_test.cpp
+    │      
+    ├─privatexml
+    │      Makefile.am
+    │      Makefile.in
+    │      privatexml_test.cpp
+    │      
+    ├─pubsubevent
+    │      Makefile.am
+    │      Makefile.in
+    │      pubsubevent_test.cpp
+    │      
+    ├─pubsubmanager
+    │      Makefile.am
+    │      Makefile.in
+    │      pubsubmanager_test.cpp
+    │      
+    ├─pubsubmanagerpubsub
+    │      Makefile.am
+    │      Makefile.in
+    │      pubsubmanagerpubsub_test.cpp
+    │      
+    ├─receipt
+    │      Makefile.am
+    │      Makefile.in
+    │      receipt_test.cpp
+    │      
+    ├─registration
+    │      Makefile.am
+    │      Makefile.in
+    │      registration_test.cpp
+    │      
+    ├─registrationquery
+    │      Makefile.am
+    │      Makefile.in
+    │      registrationquery_test.cpp
+    │      
+    ├─rostermanager
+    │      Makefile.am
+    │      Makefile.in
+    │      rostermanager_test.cpp
+    │      
+    ├─rostermanagerquery
+    │      Makefile.am
+    │      Makefile.in
+    │      rostermanagerquery_test.cpp
+    │      
+    ├─search
+    │      Makefile.am
+    │      Makefile.in
+    │      search_test.cpp
+    │      
+    ├─searchquery
+    │      Makefile.am
+    │      Makefile.in
+    │      searchquery_test.cpp
+    │      
+    ├─sha
+    │      Makefile.am
+    │      Makefile.in
+    │      sha_test.cpp
+    │      
+    ├─shim
+    │      Makefile.am
+    │      Makefile.in
+    │      shim_test.cpp
+    │      
+    ├─simanager
+    │      Makefile.am
+    │      Makefile.in
+    │      simanager_test.cpp
+    │      
+    ├─simanagersi
+    │      Makefile.am
+    │      Makefile.in
+    │      simanagersi_test.cpp
+    │      
+    ├─stanzaextensionfactory
+    │      Makefile.am
+    │      Makefile.in
+    │      stanzaextensionfactory_perf.cpp
+    │      stanzaextensionfactory_test.cpp
+    │      
+    ├─subscription
+    │      Makefile.am
+    │      Makefile.in
+    │      subscription_test.cpp
+    │      
+    ├─tag
+    │      Makefile.am
+    │      Makefile.in
+    │      tag_perf.cpp
+    │      tag_test.cpp
+    │      
+    ├─tlsgnutls
+    │      Makefile.am
+    │      Makefile.in
+    │      tlsgnutls_test.cpp
+    │      
+    ├─uniquemucroomunique
+    │      Makefile.am
+    │      Makefile.in
+    │      uniquemucroomunique_test.cpp
+    │      
+    ├─util
+    │      Makefile.am
+    │      Makefile.in
+    │      util_test.cpp
+    │      
+    ├─vcard
+    │      Makefile.am
+    │      Makefile.in
+    │      vcard_test.cpp
+    │      
+    ├─vcardupdate
+    │      Makefile.am
+    │      Makefile.in
+    │      vcardupdate_test.cpp
+    │      
+    ├─xpath
+    │      Makefile.am
+    │      Makefile.in
+    │      xpath_test.cpp
+    │      
+    └─zlib
+            Makefile.am
+            Makefile.in
+            zlib_perf.cpp
+            zlib_test.cpp
+            

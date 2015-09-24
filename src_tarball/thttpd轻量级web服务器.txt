@@ -1,0 +1,39 @@
+thttpd简介
+        thttpd是一个非常小巧的轻量级web server，它非常非常简单，仅仅提供了HTTP/1.1和简单的CGI支持,Nginx需要支持cgi，可以安装这个轻量级的web server。
+
+thttpd安装
+        cd /tmp/
+        wget http://acme.com/software/thttpd/thttpd-2.25b.tar.gz
+        tar xzf thttpd-2.25b.tar.gz
+        cd thttpd-2.25b/
+        ./configure --prefix=/usr/local/thttpd
+        make && make install
+    可能出现的错误：
+        htpasswd.c:52: error: conflicting types for ‘getline’
+        解决方法：编辑htpasswd.c ，把getline替换成get_line
+
+thttpd配置
+    新建/usr/local/thttpd/conf/thttpd.conf文件：
+        # BEWARE : No empty lines are allowed!
+        # This section overrides defaults
+        # This section _documents_ defaults in effect
+        # port=80
+        # nosymlink # default = !chroot
+        # novhost
+        # nocgipat
+        # nothrottles
+        # host=0.0.0.0
+        # charset=iso-8859-1
+        host=127.0.0.1
+        port=8008
+        user=thttpd
+        logfile=/usr/local/thttpd/log/thttpd.log
+        pidfile=/usr/local/thttpd/log/thttpd.pid
+        dir=/usr/local/thttpd/www/
+        cgipat=**.cgi|**.pl
+        
+启动thttpd
+        /usr/local/thttpd/sbin/thttpd -C /usr/local/thttpd/conf/thttpd.conf
+        
+        
+        

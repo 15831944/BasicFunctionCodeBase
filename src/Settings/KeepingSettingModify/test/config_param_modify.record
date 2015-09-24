@@ -1,0 +1,15 @@
+# 
+# cat config_param_modify.record 
+CFversion=1.0
+Parameter[ Device.ManagementServer.ConnectionRequestUsername ] @<2012-Jan-01 08:02:05.521> modified by[ JS ]from[ admin ]to[ admin666 ]into file[ /root/yx_config_tr069.ini ].
+Parameter[ Device.ManagementServer.PeriodicInformInterval ] @<2012-Jan-01 08:02:05.520> modified by[ JS ]from[ 3600 ]to[ 600 ]into file[ /root/yx_config_tr069.ini ].
+Parameter[ Device.ManagementServer.Username ] @<2012-Jan-01 08:02:05.521> modified by[ JS ]from[ testcpe ]to[ testcpe55 ]into file[ /root/yx_config_tr069.ini ].
+Parameter[ hd_aspect_mode ] @<2012-Jan-01 08:02:05.481> modified by[ JS ]from[ 2 ]to[ 0 ]into file[ /root/yx_config_customer.ini ].
+Parameter[ netAESpasswd ] @<2012-Jan-01 08:02:05.547> modified by[ JS ]from[ *** ]to[ *** ]into file[ /root/yx_config_system.ini ].
+Parameter[ ntp ] @<2012-Jan-01 08:02:05.483> modified by[ JS ]from[  ]to[ 8549 ]into file[ /root/yx_config_system.ini ].
+Parameter[ ntp1 ] @<2012-Jan-01 08:02:05.495> modified by[ JS ]from[  ]to[ 054222 ]into file[ /root/yx_config_system.ini ].
+Parameter[ ntvAESpasswd ] @<2012-Jan-01 08:02:05.507> modified by[ JS ]from[ *** ]to[ *** ]into file[ /root/yx_config_customer.ini ].
+Parameter[ timezone ] @<2012-Jan-01 08:02:05.481> modified by[ JS ]from[ 8 ]to[ 7 ]into file[ /root/yx_config_system.ini ].
+Parameter[ upgradeBackupUrl ] @<2012-Jan-01 08:02:04.476> modified by[ JS ]from[  ]to[ 86896 ]into file[ /root/yx_config_system.ini ].
+Parameter[ upgradeUrl ] @<2012-Jan-01 08:02:04.476> modified by[ JS ]from[  ]to[ 59948 ]into file[ /root/yx_config_system.ini ].
+# 

@@ -1,0 +1,102 @@
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -H/mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player -B/root/test/mytest/myplayer/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_start /root/test/mytest/myplayer/build/CMakeFiles /root/test/mytest/myplayer/build/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make[1]: Entering directory `/root/test/mytest/myplayer/build'
+make -f src/CMakeFiles/build_info.dir/build.make src/CMakeFiles/build_info.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player /mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/src /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src /root/test/mytest/myplayer/build/src/CMakeFiles/build_info.dir/DependInfo.cmake --color=
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/CMakeFiles/build_info.dir/build.make src/CMakeFiles/build_info.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 7
+[  3%] test make_version.sh
+cd /root/test/mytest/myplayer/build/src && exec /mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/config/scripts/make_version.sh
+-----------------------------------------------
+            generate build_info.h              
+-----------------------------------------------
+delete /mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/config/scripts/../../src/includes/build_info.h
+#ifndef __BUILD_INFO_H__
+#define __BUILD_INFO_H__
+ 
+ 
+#define g_make_build_date             "Fri Jul 17 14:35:36 CST 2015"
+#define g_make_build_user_name        "root"
+#define g_make_build_host_name        "sun-desktop"
+#define g_make_build_kernel_revision  "Linux 2.6.32-33-generic i686"
+#define g_make_svn_version    "5325"
+#define g_make_major_version  "1"
+#define g_make_minor_version  "0"
+#define g_make_build_version  "1.0.5325"
+ 
+#endif //__BUILD_INFO_H__
+-- written to /mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/config/scripts/../../src/includes/build_info.h
+cd /root/test/mytest/myplayer/build/src && exec /mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/config/scripts/prepare_arch_libs.sh /root/test/mytest/myplayer/build/libs /mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/src/libs /mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/src/includes 0.8.15 2.0.3
+----------------------------------------------------------------------------
+                             prepare arch libs                              
+----------------------------------------------------------------------------
+
+
+libavcodec.a
+libavcodec.so
+libavcodec.so.53
+libavcodec.so.53.8.0
+libavdevice.a
+libavdevice.so
+libavdevice.so.53
+libavdevice.so.53.1.1
+libavfilter.a
+libavfilter.so
+libavfilter.so.2
+libavfilter.so.2.23.0
+libavformat.a
+libavformat.so
+libavformat.so.53
+libavformat.so.53.5.0
+libavutil.a
+libavutil.so
+libavutil.so.51
+libavutil.so.51.9.1
+libswscale.a
+libswscale.so
+libswscale.so.2
+libswscale.so.2.0.0
+pkgconfig/
+pkgconfig/libavcodec.pc
+pkgconfig/libswscale.pc
+pkgconfig/libavfilter.pc
+pkgconfig/libavdevice.pc
+pkgconfig/libavutil.pc
+pkgconfig/libavformat.pc
+Decompress /mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/src/libs/ffmpeg-0.8.15-libs.tar.gz to /root/test/mytest/myplayer/build/libs/ffmpeg done.............. 
+./lib/
+./lib/libSDL2.la
+./lib/libSDL2-2.0.so.0.2.1
+./lib/libSDL2main.a
+./lib/pkgconfig/
+./lib/pkgconfig/sdl2.pc
+./lib/libSDL2.so
+./lib/libSDL2_test.a
+./lib/libSDL2.a
+./lib/libSDL2-2.0.so.0
+Decompress /mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/src/libs/SDL2-2.0.3-libs.tar.gz to /root/test/mytest/myplayer/build/libs/SDL2 done.............. 
+-- written to 
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 6
+[  6%] test build_info
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles  6 7
+[  6%] Built target build_info
+make -f src/Player/CMakeFiles/players.dir/build.make src/Player/CMakeFiles/players.dir/depend
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+cd /root/test/mytest/myplayer/build && /usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_depends "Unix Makefiles" /mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player /mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/src/Player /root/test/mytest/myplayer/build /root/test/mytest/myplayer/build/src/Player /root/test/mytest/myplayer/build/src/Player/CMakeFiles/players.dir/DependInfo.cmake --color=
+Scanning dependencies of target players
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make -f src/Player/CMakeFiles/players.dir/build.make src/Player/CMakeFiles/players.dir/build
+make[2]: Entering directory `/root/test/mytest/myplayer/build'
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 27
+[  9%] Building C object src/Player/CMakeFiles/players.dir/LogPlayer.c.o
+cd /root/test/mytest/myplayer/build/src/Player && /usr/bin/gcc   -I/mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/src/includes -I/mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/src/includes/ffmpeg -I/mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/src/includes/SDL2/include -I/mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/src -I/mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/src/Log -I/mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/src/Monitor -I/mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/src/Player -I/mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/src/Utils -I/mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/src/Utils/ParserIni -I/mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/src/Utils/ParserJsonCPP -I/mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/src/Utils/ParserTinyXML2 -I/mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/src/Widget    -o CMakeFiles/players.dir/LogPlayer.c.o   -c /mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/src/Player/LogPlayer.c
+/usr/cmake-2.8.9-Linux-i386/bin/cmake -E cmake_progress_report /root/test/mytest/myplayer/build/CMakeFiles 28
+[ 12%] Building C object src/Player/CMakeFiles/players.dir/simplest_player.c.o
+cd /root/test/mytest/myplayer/build/src/Player && /usr/bin/gcc   -I/mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/src/includes -I/mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/src/includes/ffmpeg -I/mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/src/includes/SDL2/include -I/mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/src -I/mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/src/Log -I/mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/src/Monitor -I/mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/src/Player -I/mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/src/Utils -I/mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/src/Utils/ParserIni -I/mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/src/Utils/ParserJsonCPP -I/mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/src/Utils/ParserTinyXML2 -I/mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/src/Widget    -o CMakeFiles/players.dir/simplest_player.c.o   -c /mnt/hgfs/my_svn/source-my_player/my_player-OK-1/my_player/src/Player/simplest_player.c
+make[2]: Leaving directory `/root/test/mytest/myplayer/build'
+make[1]: Leaving directory `/root/test/mytest/myplayer/build'

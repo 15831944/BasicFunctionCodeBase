@@ -1,0 +1,5 @@
+
+使用MediaInfo源码，libmediainfo_0.7.61.tar.bz2
+
+
+源码结构做了调整，删除无用的平台代码

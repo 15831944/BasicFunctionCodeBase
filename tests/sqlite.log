@@ -1,0 +1,37 @@
+=================log_utils_init=========================
+[Jul-13-2015, Mon.][09:39:31.257] [sun-desktop][00:0c:29:81:f2:a7][192.168.1.63] [0.0.0:5325][utils] <<117>> [mnt/hgfs/my_svn/my_player/src/Utils/logParseFiles.c:24][log_utils_init:Fatal!] : =====utilsLogFatal==[0]=--------------=
+[Jul-13-2015, Mon.][09:39:31.257] [sun-desktop][00:0c:29:81:f2:a7][192.168.1.63] [0.0.0:5325][utils] <<118>> [mnt/hgfs/my_svn/my_player/src/Utils/logParseFiles.c:25][log_utils_init:Error!] : =====utilsLogError==[0]=--------------=
+[Jul-13-2015, Mon.][09:39:31.257] [sun-desktop][00:0c:29:81:f2:a7][192.168.1.63] [0.0.0:5325][utils] <<119>> [mnt/hgfs/my_svn/my_player/src/Utils/logParseFiles.c:26][log_utils_init:Warning] : =====utilsLogWarning==[0]=--------------=
+[Jul-13-2015, Mon.][09:39:31.257] [sun-desktop][00:0c:29:81:f2:a7][192.168.1.63] [0.0.0:5325][utils] <<120>> [mnt/hgfs/my_svn/my_player/src/Utils/logParseFiles.c:27][log_utils_init:Info] : =====utilsLogInfo==[0]=--------------=
+[Jul-13-2015, Mon.][09:39:31.257] [sun-desktop][00:0c:29:81:f2:a7][192.168.1.63] [0.0.0:5325][utils] <<121>> [mnt/hgfs/my_svn/my_player/src/Utils/logParseFiles.c:28][log_utils_init:Verbose] : =====utilsLogVerbose==[0]=--------------=
+[Jul-13-2015, Mon.][09:39:31.258] [sun-desktop][00:0c:29:81:f2:a7][192.168.1.63] [0.0.0:5325][utils] <<122>> [mnt/hgfs/my_svn/my_player/src/Utils/logParseFiles.c:29][log_utils_init:Debug] : =====utilsLogDebug==[0]=--------------=
+[Jul-13-2015, Mon.][09:39:31.258] [sun-desktop][00:0c:29:81:f2:a7][192.168.1.63] [0.0.0:5325][utils] <<120>> [mnt/hgfs/my_svn/my_player/src/Utils/Sqlite3/sqlite3Test.c:25][main:Info] : ========================1111======================================================--------------=
+[Jul-13-2015, Mon.][09:39:31.258] [sun-desktop][00:0c:29:81:f2:a7][192.168.1.63] [0.0.0:5325][utils] <<122>> [mnt/hgfs/my_svn/my_player/src/Utils/Sqlite3/sqlite3Test.c:85][InquirySqliteCallBackTest:Debug] : =====InquirySqliteCallBackTest===--------------=
+---------------------记录包含 2 个字段 
+字段名:ID  ß> 字段值:1 
+字段名:NAME  ß> 字段值:走路 
+---------------------------------------------
+---------------------记录包含 2 个字段 
+字段名:ID  ß> 字段值:2 
+字段名:NAME  ß> 字段值:骑单车 
+---------------------------------------------
+---------------------记录包含 2 个字段 
+字段名:ID  ß> 字段值:3 
+字段名:NAME  ß> 字段值:坐汽车 
+---------------------------------------------
+[Jul-13-2015, Mon.][09:39:31.301] [sun-desktop][00:0c:29:81:f2:a7][192.168.1.63] [0.0.0:5325][utils] <<121>> [mnt/hgfs/my_svn/my_player/src/Utils/Sqlite3/sqlite3Test.c:28][main:Verbose] : =======================22222=======================================================--------------=
+[Jul-13-2015, Mon.][09:39:31.302] [sun-desktop][00:0c:29:81:f2:a7][192.168.1.63] [0.0.0:5325][utils] <<122>> [mnt/hgfs/my_svn/my_player/src/Utils/Sqlite3/sqlite3Test.c:135][InquirySqliteNoCallBackTest:Debug] : =====InquirySqliteNoCallBackTest===--------------=
+[Jul-13-2015, Mon.][09:39:31.302] [sun-desktop][00:0c:29:81:f2:a7][192.168.1.63] [0.0.0:5325][utils] <<120>> [mnt/hgfs/my_svn/my_player/src/Utils/Sqlite3/sqlite3Test.c:158][InquirySqliteNoCallBackTest:Info] : 查到3条记录
+[Jul-13-2015, Mon.][09:39:31.302] [sun-desktop][00:0c:29:81:f2:a7][192.168.1.63] [0.0.0:5325][utils] <<120>> [mnt/hgfs/my_svn/my_player/src/Utils/Sqlite3/sqlite3Test.c:161][InquirySqliteNoCallBackTest:Info] : 第 1 条记录
+[Jul-13-2015, Mon.][09:39:31.302] [sun-desktop][00:0c:29:81:f2:a7][192.168.1.63] [0.0.0:5325][utils] <<120>> [mnt/hgfs/my_svn/my_player/src/Utils/Sqlite3/sqlite3Test.c:163][InquirySqliteNoCallBackTest:Info] : 字段名:ID  ß> 字段值:1
+[Jul-13-2015, Mon.][09:39:31.302] [sun-desktop][00:0c:29:81:f2:a7][192.168.1.63] [0.0.0:5325][utils] <<120>> [mnt/hgfs/my_svn/my_player/src/Utils/Sqlite3/sqlite3Test.c:163][InquirySqliteNoCallBackTest:Info] : 字段名:NAME  ß> 字段值:走路
+[Jul-13-2015, Mon.][09:39:31.302] [sun-desktop][00:0c:29:81:f2:a7][192.168.1.63] [0.0.0:5325][utils] <<120>> [mnt/hgfs/my_svn/my_player/src/Utils/Sqlite3/sqlite3Test.c:166][InquirySqliteNoCallBackTest:Info] : --------------------------------
+[Jul-13-2015, Mon.][09:39:31.302] [sun-desktop][00:0c:29:81:f2:a7][192.168.1.63] [0.0.0:5325][utils] <<120>> [mnt/hgfs/my_svn/my_player/src/Utils/Sqlite3/sqlite3Test.c:161][InquirySqliteNoCallBackTest:Info] : 第 2 条记录
+[Jul-13-2015, Mon.][09:39:31.302] [sun-desktop][00:0c:29:81:f2:a7][192.168.1.63] [0.0.0:5325][utils] <<120>> [mnt/hgfs/my_svn/my_player/src/Utils/Sqlite3/sqlite3Test.c:163][InquirySqliteNoCallBackTest:Info] : 字段名:ID  ß> 字段值:2
+[Jul-13-2015, Mon.][09:39:31.302] [sun-desktop][00:0c:29:81:f2:a7][192.168.1.63] [0.0.0:5325][utils] <<120>> [mnt/hgfs/my_svn/my_player/src/Utils/Sqlite3/sqlite3Test.c:163][InquirySqliteNoCallBackTest:Info] : 字段名:NAME  ß> 字段值:骑单车
+[Jul-13-2015, Mon.][09:39:31.302] [sun-desktop][00:0c:29:81:f2:a7][192.168.1.63] [0.0.0:5325][utils] <<120>> [mnt/hgfs/my_svn/my_player/src/Utils/Sqlite3/sqlite3Test.c:166][InquirySqliteNoCallBackTest:Info] : --------------------------------
+[Jul-13-2015, Mon.][09:39:31.302] [sun-desktop][00:0c:29:81:f2:a7][192.168.1.63] [0.0.0:5325][utils] <<120>> [mnt/hgfs/my_svn/my_player/src/Utils/Sqlite3/sqlite3Test.c:161][InquirySqliteNoCallBackTest:Info] : 第 3 条记录
+[Jul-13-2015, Mon.][09:39:31.302] [sun-desktop][00:0c:29:81:f2:a7][192.168.1.63] [0.0.0:5325][utils] <<120>> [mnt/hgfs/my_svn/my_player/src/Utils/Sqlite3/sqlite3Test.c:163][InquirySqliteNoCallBackTest:Info] : 字段名:ID  ß> 字段值:3
+[Jul-13-2015, Mon.][09:39:31.302] [sun-desktop][00:0c:29:81:f2:a7][192.168.1.63] [0.0.0:5325][utils] <<120>> [mnt/hgfs/my_svn/my_player/src/Utils/Sqlite3/sqlite3Test.c:163][InquirySqliteNoCallBackTest:Info] : 字段名:NAME  ß> 字段值:坐汽车
+[Jul-13-2015, Mon.][09:39:31.302] [sun-desktop][00:0c:29:81:f2:a7][192.168.1.63] [0.0.0:5325][utils] <<120>> [mnt/hgfs/my_svn/my_player/src/Utils/Sqlite3/sqlite3Test.c:166][InquirySqliteNoCallBackTest:Info] : --------------------------------
+[Jul-13-2015, Mon.][09:39:31.302] [sun-desktop][00:0c:29:81:f2:a7][192.168.1.63] [0.0.0:5325][utils] <<122>> [mnt/hgfs/my_svn/my_player/src/Utils/Sqlite3/sqlite3Test.c:32][main:Debug] : ======================33333========================================================--------------=

@@ -1,0 +1,41 @@
+# autoupnp-0.4.6 (2011-09-15)
+- support pthreads more correctly (and make it optional),
+- use libtinynotify instead of libnotify.
+
+# autoupnp-0.4.5 (2011-07-27)
+- migrated to autotools,
+- added links to libnotify notifications,
+- compat with libnotify-0.7,
+- compat with miniupnpc-1.6.
+
+# autoupnp-0.4.4 (2010-09-08)
+- 'install' and 'ginstall' targets within the Makefile,
+- ability to install a 'dummy' lib behind the real libautoupnp.so
+	to safely satisfy ld.so's suid&sgid greed.
+
+# autoupnp-0.4.3 (2010-08-21)
+- support for libminiupnpc >= 1.4.20100609,
+- retrying after an HTTP request fails (i.e. if IGD address changes at
+	runtime),
+- cleaned up the libminiupnpc error handling,
+- library finding (for local installs) and path hardcoding (for PM
+	installs) within the wrapper script.
+
+# autoupnp-0.4.2 (2010-08-18)
+- thread safety (with extensive use of mutexes and an R/W lock),
+- POSIX compatibility of the wrapper script (with usage change),
+- 'install' and 'uninstall' functions in the wrapper script.
+
+# autoupnp-0.4.1 (2010-08-17)
+- forking programs support,
+- LD_PRELOAD-enabling wrapper script.
+
+# autoupnp-0.4 (2010-08-14)
+- rewritten to a LD_PRELOAD-ed C library.
+
+# autoupnp-0.3 (2010-05-30)
+- cleanup for system-wide installs.
+
+# autoupnp-0.2 (2010-05-30)
+- shell script to sync UPnP forwardings with open connections.
+

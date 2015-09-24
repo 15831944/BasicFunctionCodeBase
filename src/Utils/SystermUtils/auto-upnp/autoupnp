@@ -1,0 +1,72 @@
+#!/bin/sh
+# AutoUPnP LD_PRELOAD setup helper
+# (c) 2011 Michał Górny
+# Released under the terms of the 3-clause BSD license
+
+print_help() {
+	cat <<_EOF_
+Usage:
+
+autoupnp
+	to execute subshell with AutoUPnP LD_PRELOAD enabled.
+autoupnp <command> [...]
+	to execute the command with AutoUPnP LD_PRELOAD enabled.
+eval "\$(autoupnp on)"
+	to export AutoUPnP LD_PRELOAD to the currently running shell.
+eval "\$(autoupnp off)"
+	to remove AutoUPnP from LD_PRELOAD in the currently running shell.
+_EOF_
+}
+
+endswith() {
+	[ "${2%/${1}}" != "${2}" -o "${1}" = "${2}" ]
+}
+
+enable_preload() {
+	set -- ${LD_PRELOAD}
+	while [ ${#} -gt 0 ]; do
+		endswith libautoupnp.so ${1} && return
+		shift
+	done
+
+	set -- libautoupnp.so
+	printf 'export LD_PRELOAD="${LD_PRELOAD+${LD_PRELOAD} }%s"\n' "${1}"
+}
+
+disable_preload() {
+	set -- ${LD_PRELOAD}
+
+	unset LD_PRELOAD
+	while [ ${#} -gt 0 ]; do
+		endswith libautoupnp.so ${1} \
+				|| LD_PRELOAD=${LD_PRELOAD+${LD_PRELOAD} }${1}
+		shift
+	done
+
+	if [ -n "${LD_PRELOAD}" ]; then
+		printf 'export LD_PRELOAD="%s"\n' "$(echo "${LD_PRELOAD}" | sed -e 's:":\\":')"
+	else
+		echo 'unset LD_PRELOAD'
+	fi
+}
+
+if [ ${#} -gt 0 ]; then
+	case "${1}" in
+		-h|-?|--help)
+			print_help
+			;;
+		on)
+			enable_preload
+			;;
+		off)
+			disable_preload
+			;;
+		*)
+			eval "$(enable_preload)"
+			exec "${@}"
+	esac
+else
+	echo 'Starting AutoUPnP-enabled shell.' >&2
+	eval "$(enable_preload)"
+	exec "${SHELL:-/bin/sh}"
+fi
